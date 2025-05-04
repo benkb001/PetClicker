@@ -22,15 +22,17 @@ const { MongoClient, ServerApiVersion } = require("mongodb");
 
 app.use(morgan('dev'));
 
-app.get("/", (req, res) => {
-    res.render('login');
-});
+
 
 app.use(session({
     resave: true,
     saveUninitialized: false,
-    secret: process.env.SECRET
+    secret: process.env.SECRET || 'secret'
   }));
+
+app.get("/", (req, res) => {
+    res.render('login');
+});
 
 app.post("/login", async (req, res) => {
     const client = new MongoClient(MONGO_CONNECTION_STRING, { serverApi: ServerApiVersion.v1 });
