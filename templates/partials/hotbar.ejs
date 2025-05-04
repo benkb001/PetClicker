@@ -1,0 +1,18 @@
+<div id="hotbar">
+    <a href="/view/cats"> View Cats</a>
+    <a href="/buy/cats"> Buy Cats</a>
+    <a href="/home">Pet Clicker</a>
+    <a href="/buy/dogs"> Buy Dogs</a>
+    <a href="/view/dogs"> View Dogs</a>
+</div>
+<br><br><br><br>
+    <h1 id="cats">Cats: <%- cats %></h1>
+    <h1 id="dogs">Dogs: <%- dogs %></h1>
+    <h1 id="coins">Coins: <%- coins %></h1>
+
+<script>
+    let coins = Number('<%- coins %>');
+    let dogs = Number('<%- dogs %>');
+    let cats = Number('<%- cats %>');
+</script>
+    

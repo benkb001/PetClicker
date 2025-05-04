@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/clicker.js" defer></script>
+</head>
+<body>
+    <%- include('partials/hotbar') %>
+    <button id="petButton" onclick="coinClick(); updateData();">Pet Your Pets</button>
+    <button onclick="save()">Save</button>
+    <p>Coins/click = cats * dogs</p>
+</body>

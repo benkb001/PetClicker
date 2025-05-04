@@ -1,0 +1,15 @@
+#hotbar {
+    background: lightgray; 
+    position: fixed;
+    padding: 10px; 
+    margin: auto;
+    top: 10px;
+    left: 50px; 
+    width: 90%;
+    display: flex; 
+    justify-content: space-between;
+}
+
+img {
+    width: 30%; 
+}
